@@ -1,0 +1,52 @@
+import subprocess
+import glob
+import os
+import shutil
+
+
+
+filetype = ["JPG","jpg"]
+
+
+os.makedirs('sorted', exist_ok=True)
+
+filenamelist = [];
+for extension in filetype:
+	filenamelist += glob.glob('./**/*.'+extension, recursive=True) 
+
+for filename in filenamelist:
+	image = filename.split('./')[-1]
+	print(image)
+	cmd = 'python3.4 classify_image.py --image_file '+'%r' %image
+	p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+	out, err = p.communicate() 
+	result = out.decode('utf-8').split('\n')
+	print(result[0])
+	shapeDetected = result[0]
+	shapeDetected = shapeDetected.split('score = ')
+	title = shapeDetected[0]
+	title = title.split(',')[0]
+	title = title.split('(')[0]
+	score = shapeDetected[-1]
+	score = score.split(')')[0]
+	print(title)
+	print(score)
+
+	if float(score)<0.5:
+		title = "not_matched"
+
+	os.makedirs('sorted/'+title, exist_ok=True)
+	if not os.path.exists('sorted/'+title+'/'+image.split('/')[-1]):  # folder exists, file does not
+		shutil.copy(filename, 'sorted/'+title+'/'+image.split('/')[-1])
+	else:  # folder exists, file exists as well
+		ii = 1
+		baseName = image.split('/')[-1].split('.')[0]
+		extension  = image.split('/')[-1].split('.')[-1]
+
+		while True:
+			new_name = os.path.join('sorted/'+title+'/'+baseName + "_" + str(ii) + extension)
+			if not os.path.exists(new_name):
+				shutil.copy(filename, new_name)
+				print("Copied", filename, "as", new_name)
+				break 
+			ii += 1
