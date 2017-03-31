@@ -100,8 +100,9 @@ for filename in filenamelist:
     image = filename.split(path_to_classify+'/')[-1]
 
 
-    # use artificial intelligence algorithm 
-    cmd = 'python3.5 '+os.path.dirname(__file__)+'/classify_image.py --model_dir '+os.path.dirname(__file__)+'/imagenet'+' --image_file '+'%r' %path_to_classify +'/' +'%r' % image
+    # use artificial intelligence algorithm
+    print(os.path.dirname(__file__)) 
+    cmd = 'python3.5 '+os.path.dirname(os.path.abspath(__file__))+'/classify_image.py --model_dir '+os.path.dirname(os.path.abspath(__file__))+'/imagenet'+' --image_file '+'%r' %path_to_classify +'/' +'%r' % image
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
     out, err = p.communicate()
 
