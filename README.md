@@ -74,4 +74,17 @@ classify_path --out_path ./sorted ./path_to_classify/
 classify_path -h
 ```
 
- 
+# TODO : 
+
+- [x] Check if the code is working on Ubuntu 16
+- [ ] Update installation part of the documentation
+- [ ] Upgrade the code with the new tensorflow API : Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization() 
+- [ ] Try with GPU tensorflow
+- [ ] Parallelize image recognition (check with openMP ?)
+- [ ] Build a dockerfile to transform the script as a service 
+- [ ] Learn how to generate the model with my own data
+- [ ] Create a responsive interface website (hosting the service) for no-computer-friendly people who want to sort their holiday pictures
+- [x] Keep playing with Tensorflow
+- [x] Star the github repository
+- [x] Talk about this service to attract developers to contribute
+- [ ] Revise this todo list
