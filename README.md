@@ -15,7 +15,7 @@ Oh dear god ! My computer analysed my pictures and recognized on its own all the
 ![messed_path](assets/image/churches.png)
 
 ## Example
-With this command, I am now able to sort my pictures by topics as above
+With this command line, I am now able to sort my pictures by topics as above
 ```
 python3.5 messed_path_to_classify.py --out_path ./example/sorted ./example/cambridge
 ```
@@ -66,21 +66,21 @@ Now have fun and classify your folder !
 
 ## Usage :
 - Mainly use :
-```
-classify_path --out_path ./sorted ./path_to_classify/
-```
-where :
--	```./sorted``` is the destination path
--	```./path_to_classify/``` is the path where images are located
+	```
+	classify_path --out_path ./sorted ./path_to_classify/
+	```
+	where :
+	- ```./sorted``` is the destination path
+	- ```./path_to_classify/``` is the path where images are located
 
 
 - Help :
-```
-classify_path -h
-```
+	```
+	classify_path -h
+	```
 
 
-## How it works
+## How does it work ?
 [TO DO]
 - Label image with deep learning
 - Create folder corresponding to the Label
