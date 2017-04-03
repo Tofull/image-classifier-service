@@ -69,9 +69,9 @@ Now have fun and classify your folder !
 ```
 classify_path --out_path ./sorted ./path_to_classify/
 ```
-	where :
-	-	```./sorted``` is the destination path
-	-	```./path_to_classify/``` is the path where images are located
+where :
+-	```./sorted``` is the destination path
+-	```./path_to_classify/``` is the path where images are located
 
 
 - Help :
