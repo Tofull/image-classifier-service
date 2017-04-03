@@ -27,16 +27,16 @@ python3.5 messed_path_to_classify.py --out_path ./example/sorted ./example/cambr
 This code needs python3 and TensorFlow to work.
 - Install python3 :
 
-	```sh
+```sh
 sudo apt-get install python3
-	```
+```
 
 - Install TensorFlow :
 
 	You need to first install pip3 plugin for managing the modules.
-	```sh
+```sh
 sudo apt-get install python3-pip python3-dev
-	```
+```
 Then, install Tensorflow :
 ```sh
 sudo pip3 install --upgrade <link>
