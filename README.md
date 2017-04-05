@@ -81,15 +81,18 @@ Now have fun and classify your folder !
 
 
 ## How does it work ?
-[TO DO]
+
+
+![Schema](assets/diagram/how_does_it_work/diagram_how_does_it_work.png)
 - Label image with deep learning
 - Create folder corresponding to the Label
 - Copy the image into the right path
 
+
 # TODO :
 
 - [x] Check if the code is working on Ubuntu 16
-- [ ] Update installation part of the documentation
+- [x] Update installation part of the documentation
 - [ ] Upgrade the code with the new tensorflow API : Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization()
 - [ ] Try with GPU tensorflow
 - [ ] Add *png* format use case (png decoder)

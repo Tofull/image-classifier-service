@@ -1,0 +1,8 @@
+// This diagram was created from https://yuml.me/diagram/scruffy/class/draw 
+
+[Command line | - send images]->[TensorFlow{bg:violet}]
+[TensorFlow]->[note:Object recognition{bg:wheat}]
+
+[TensorFlow]->[note:Labeller{bg:wheat}]
+[note:Labeller]->[Python Script | - Construct tree with label tag;- copy the image in the right directory]
+[note:Object recognition]->[Python Script | - Construct tree with label tag;- copy the image in the right directory]
