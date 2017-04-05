@@ -19,7 +19,7 @@ With this command line, I am now able to sort my pictures by topics as above
 ```
 python3.5 messed_path_to_classify.py --out_path ./example/sorted ./example/cambridge
 ```
-
+_____
 ## Installation
 > The installation procedure has been tested on Ubuntu 16.04.
 
@@ -63,7 +63,7 @@ chmod +x ./alias.sh
 You could now use ```classify_path``` to call the script. Easier and faster.
 
 Now have fun and classify your folder !
-
+_____
 ## Usage :
 - Mainly use :
 	```
@@ -88,7 +88,7 @@ Now have fun and classify your folder !
 - Create folder corresponding to the Label
 - Copy the image into the right path
 
-
+_____
 # TODO :
 
 - [x] Check if the code is working on Ubuntu 16
@@ -105,6 +105,7 @@ Now have fun and classify your folder !
 - [x] Talk about this service to attract developers to contribute
 - [ ] Revise this todo list
 
+_____
 ## Contributions
 *messed_path_to_classify.py* has been created by Loic MESSAL (Student at the French National School of Geomatics).  
 24 March 2016
