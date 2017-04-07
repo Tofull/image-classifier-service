@@ -101,7 +101,7 @@ _____
 - [ ] Learn how to generate the model with my own data
 - [ ] Create a responsive interface website (hosting the service) for no-computer-friendly people who want to sort their holiday pictures
 - [x] Keep playing with Tensorflow
-- [x] :star: Star the github repository
+- [x] :star: **Star the github repository**
 - [x] Talk about this service to attract developers to contribute
 - [ ] Revise this todo list
 
